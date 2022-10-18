@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-header:'Staatliches', cursive;
+
+    --bgc-header: hsl(218, 17%, 62%);
+    --bgc-h1: hsl(275, 18%, 79%); 
+    --fc-h1:hsl(0, 0%, 100%);
+}
+
+.page {
+    max-width: 38.4rem;
+}
+
+header .logo {
+    padding: 3.2rem;
+    margin-bottom: 11rem;
+}
+
+header {
+    background-color: var(--bgc-header);
+
+    height: 30rem;
+    margin-bottom: 1.4rem;
+    
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-family: var(--ff-header); 
+    font-weight: 400;
+    font-size: 4.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: var(--fc-h1);
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25); 
+    width: 100%;
+    background: var(--bgc-h1);;
+    position: absolute;
+    height: 4.9rem;
+    bottom: 2.9rem;
+    padding: 0.8rem 0;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 6.3rem;
+}
+
+main {
+    display: grid;
+    gap: 3.2rem;
+    padding: 0 3.2rem 6.0rem;
+}
+
+.cards {
+    position: relative;
+}
+
+.cards img {
+width: 100%;
+object-fit: cover;
+}   
+
+
+.cards h2 {  
+    position: absolute;
+    top: 1.7rem;
+    right: 1.6rem;
+}
+
+.cards h2 span {
+    font-family: var(--fc-h1);
+    font-weight: 400;
+    font-size: 2.0rem;
+    line-height: 3.4rem;
+    letter-spacing: 0.05em;
+    color: #4A4E69;
+    background: #FEEAFA;
+    border-radius: 2.0rem;  
+    display: inline-flex;
+    align-items: center;
+    padding: 0 2.3rem;
+}
+
+img:hover {
+    transition-property: transform;
+}
+
+@keyframes righttoleft {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.2);
+        transition: 1s;
+        opacity: 1;
+    }
+}
